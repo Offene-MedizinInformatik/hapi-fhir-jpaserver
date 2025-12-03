@@ -83,7 +83,7 @@ public class AppProperties {
 	private EncodingEnum default_encoding = EncodingEnum.JSON;
 	private FhirVersionEnum fhir_version = FhirVersionEnum.R4;
 	private ClientIdStrategyEnum client_id_strategy = ClientIdStrategyEnum.ALPHANUMERIC;
-	private IdStrategyEnum server_id_strategy = null;
+	private IdStrategyEnum server_id_strategy = IdStrategyEnum.UUID;
 	private List<String> supported_resource_types = new ArrayList<>();
 	private List<Bundle.BundleType> allowed_bundle_types = null;
 	private Boolean narrative_enabled = true;
