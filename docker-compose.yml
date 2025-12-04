@@ -4,9 +4,6 @@ services:
     build: .
     container_name: hapi-fhir-jpaserver-start
     restart: on-failure
-    configs:
-      - source: hapi
-        target: /app/config/application.yaml
     ports:
       - "8080:8080"
     depends_on:
